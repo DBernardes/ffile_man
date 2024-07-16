@@ -15,7 +15,7 @@ class Manager:
             FITS_File(file)
             for file in os.listdir(self.images_folder)
             if ".fits" in file
-        ]
+        ] #check
 
     def print_list(self) -> str:
         print(*self.fit_files, sep="\n")
