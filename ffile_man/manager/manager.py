@@ -1,4 +1,6 @@
-class Manager():
+from fits_file import FITS_File
 
-    def __init__(self) -> None:
-        ...
+
+class Manager:
+
+    def __init__(self) -> None: ...
