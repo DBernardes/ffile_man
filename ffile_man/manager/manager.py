@@ -12,5 +12,10 @@ class Manager:
 
     def _read_folder(self) -> list:
         self.fit_files = [
-            file for file in os.listdir(self.images_folder) if ".fits" in file
+            FITS_File(file)
+            for file in os.listdir(self.images_folder)
+            if ".fits" in file
         ]
+
+    def print_list(self) -> str:
+        print(*self.fit_files, sep="\n")
