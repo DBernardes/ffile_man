@@ -1,9 +1,9 @@
-.. FITS File Manager documentation master file, created by
-   sphinx-quickstart on Wed Jul 17 16:05:57 2024.
+.. FITS FIle Manager documentation master file, created by
+   sphinx-quickstart on Wed Jul 17 14:24:41 2024.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-FITS File Manager documentation
+FITS FIle Manager documentation
 ===============================
 
 Add your content using ``reStructuredText`` syntax. See the
@@ -14,6 +14,4 @@ documentation for details.
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-
-   manager.rst
 
