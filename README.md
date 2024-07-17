@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12762683.svg)](https://doi.org/10.5281/zenodo.12762683)
+[![DOI](https://zenodo.org/badge/829568003.svg)](https://zenodo.org/doi/10.5281/zenodo.12763957)
 
 # Welcome to the FITS File Manager
 
