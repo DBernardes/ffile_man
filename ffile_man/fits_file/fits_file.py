@@ -13,6 +13,7 @@ class FITS_File:
     folder_path: str
     OBSTYPE: str = ""
     DATEOBS: str = ""
+    self._extractheaderinfo()
 
     def _getheaders(self) -> None:
         file_path = os.path.join(self.folder_path, self.name)

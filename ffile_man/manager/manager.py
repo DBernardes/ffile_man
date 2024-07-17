@@ -16,10 +16,13 @@ class Manager:
             for file in os.listdir(self.images_folder)
             if ".fits" in file
         ]
-        for file in self.fits_files:
-            file._extractheaderinfo()
 
         self.fits_files.sort()
 
     def print_list(self) -> str:
+        """
+        print_list
+
+        Prints the list of fits files in the directory in order of oberserved date
+        """
         print(*self.fits_files, sep="\n")
