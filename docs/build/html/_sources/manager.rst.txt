@@ -5,5 +5,5 @@ Manager Class
 
 This is a class that helps with the FTIS file managment.
 
-.. automodule:: manager
+.. automodule:: ffile_man.manager
    :members:

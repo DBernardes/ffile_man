@@ -10,9 +10,9 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath(".."))
+sys.path.insert(0, os.path.abspath("../.."))
 
-project = "FITS FIle Manager"
+project = "FITS File Manager"
 copyright = "2024, Bernardes, D.  and Balaji, T R"
 author = "Bernardes, D.  and Balaji, T R"
 release = "v0.1.0"
