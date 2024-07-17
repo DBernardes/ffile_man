@@ -10,3 +10,23 @@ Some description...
 ```
 pip install ffile-man
 ```
+
+## How to cite
+
+`Denis e Balaji-0-5, “FITS File Manager”. Zenodo, jul. 17, 2024. doi: 10.5281/zenodo.12763958.`
+
+
+### Bibtex code
+```
+@software{denis_2024_12763958,
+  author       = {Denis and
+                  Balaji-0-5},
+  title        = {FITS File Manager},
+  month        = jul,
+  year         = 2024,
+  publisher    = {Zenodo},
+  version      = {v0.1.1},
+  doi          = {10.5281/zenodo.12763958},
+  url          = {https://doi.org/10.5281/zenodo.12763958}
+}
+```
