@@ -12,12 +12,14 @@ class Manager:
 
     def _read_folder(self) -> list:
         self.fits_files = [
-            FITS_File(file,folder_path=self.images_folder)
+            FITS_File(file, folder_path=self.images_folder)
             for file in os.listdir(self.images_folder)
             if ".fits" in file
-        ] 
+        ]
         for file in self.fits_files:
             file._extractheaderinfo()
+
+        self.fits_files.sort()
 
     def print_list(self) -> str:
         print(*self.fits_files, sep="\n")
