@@ -21,7 +21,7 @@ class Manager:
             file._extractheaderinfo()
 
         self.fits_files.sort()
-    
+
     def print_list(self) -> str:
         """print the list of files"""
         print(*self.fits_files, sep="\n")

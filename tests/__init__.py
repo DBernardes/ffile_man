@@ -1,1 +1,1 @@
-from . import test_manager,test_fits_file
+from . import test_fits_file, test_manager

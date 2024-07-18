@@ -1,6 +1,9 @@
-from ffile_man.manager import Manager
-import pytest
 import os
+
+import pytest
+
+from ffile_man.manager import Manager
+
 
 def test_no_fits_files(capsys):
     folder_path = os.path.join("FITS/Empty_folder")
@@ -8,4 +11,3 @@ def test_no_fits_files(capsys):
     m.print_list()
     captured = capsys.readouterr()
     assert captured.out == "\n"
-
