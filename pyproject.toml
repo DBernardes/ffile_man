@@ -9,11 +9,13 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 setuptools = "^70.3.0"
+poetry-plugin-export = "^1.8.0"
 
 
 [tool.poetry.group.dev.dependencies]
 ipython = "^8.26.0"
 astropy = "^6.1.1"
+taskipy = "^1.13.0"
 
 
 [tool.poetry.group.build.dependencies]
@@ -29,3 +31,5 @@ sphinx-rtd-theme = "^2.0.0"
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
+[tool.taskipy.tasks]
+make-req = "poetry export -f requirements.txt --output docs/source/requirements.txt --without-hashes --with docs --with build"
