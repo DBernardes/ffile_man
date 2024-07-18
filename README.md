@@ -1,22 +1,43 @@
+<p align="center"><img src="docs/images/FFILES.png" alt="Repository icon" width="300"/></p>
+
 [![Python package](https://github.com/DBernardes/ffile_man/actions/workflows/python-package.yml/badge.svg)](https://github.com/DBernardes/ffile_man/actions/workflows/python-package.yml)
 [![Documentation Status](https://readthedocs.org/projects/ffile-man/badge/?version=latest)](https://ffile-man.readthedocs.io/en/latest/?badge=latest)
 [![DOI](https://zenodo.org/badge/829568003.svg)](https://zenodo.org/doi/10.5281/zenodo.12763957)
 [![Code Astro](https://img.shields.io/badge/Made%20at-Code/Astro-blueviolet.svg)](https://semaphorep.github.io/codeastro/)
 
-<p align="center"><img src="docs/images/FFILES.png" alt="Repository icon" width="300"/></p>
-
 # Welcome to the FITS File Manager repository
 
-Some description...
+The FITS File Manager (ffile_man) is a package developed to assist you in the management of large sets of image files. 
+Using ffile_man, the data can be sorted into file groups, according to their purpose, like calibration and scientific data.
+For that, ffile_man looks for the `DATE-OBS` and `OBSTYPE` keywords in the image header. The former is used to sort the images as a function of time. The latter is used to sort by the type of the observation.
 
+In this article, we will give you the basics to start using ffile_man.
 
-## How to install
+## Installing the package
 
-```
+Use the `pip` command to install the package into your local computer.
+
+```bash
 pip install ffile-man
 ```
 
+## How to use this package
+
+Once you have this package installed, you will be able to run the file `example.py` found into the root folder. For that, use the command below:
+
+```{bash}
+python example.py
+```
+The result of the code will be printed out in you screen.
+
+
 ## How to cite
+
+Was this package useful for you? Think about citing us!
+
+Following, there are two examples of how this package can be cited.
+
+### Plain text
 
 `Denis and Balaji-0-5, “FITS File Manager”. Zenodo, July 17, 2024. doi: 10.5281/zenodo.12763958.`
 
