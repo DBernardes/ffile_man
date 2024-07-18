@@ -1,6 +1,9 @@
 [![Documentation Status](https://readthedocs.org/projects/ffile-man/badge/?version=latest)](https://ffile-man.readthedocs.io/en/latest/?badge=latest)
 [![DOI](https://zenodo.org/badge/829568003.svg)](https://zenodo.org/doi/10.5281/zenodo.12763957)
 
+![repo_icon](docs/images/FFILES.png)
+
+
 # Welcome to the FITS File Manager
 
 Some description...
@@ -14,7 +17,7 @@ pip install ffile-man
 
 ## How to cite
 
-`Denis e Balaji-0-5, “FITS File Manager”. Zenodo, jul. 17, 2024. doi: 10.5281/zenodo.12763958.`
+`Denis and Balaji-0-5, “FITS File Manager”. Zenodo, July 17, 2024. doi: 10.5281/zenodo.12763958.`
 
 
 ### Bibtex code
