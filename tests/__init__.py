@@ -1,0 +1,1 @@
+from . import test_manager,test_fits_file
