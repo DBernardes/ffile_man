@@ -40,3 +40,31 @@ class Manager:
     def print_list(self) -> str:
         """print the list of files"""
         print(*self.fits_files, sep="\n")
+
+    def __lt__(self,other):
+        filtered_files = []
+        for file in self.fits_files:
+            if file.DATEOBS < other:
+                filtered_files.append(file)
+        self.fits_files = filtered_files
+
+    def __gt__(self,other):
+        filtered_files = []
+        for file in self.fits_files:
+            if file.DATEOBS > other:
+                filtered_files.append(file)
+        self.fits_files = filtered_files
+
+    def __le__(self,other):
+        filtered_files = []
+        for file in self.fits_files:
+            if file.DATEOBS <= other:
+                filtered_files.append(file)
+        self.fits_files = filtered_files
+
+    def __ge__(self,other):
+        filtered_files = []
+        for file in self.fits_files:
+            if file.DATEOBS >= other:
+                filtered_files.append(file)
+        self.fits_files = filtered_files
