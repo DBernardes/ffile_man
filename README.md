@@ -1,3 +1,4 @@
+[![Documentation Status](https://readthedocs.org/projects/ffile-man/badge/?version=latest)](https://ffile-man.readthedocs.io/en/latest/?badge=latest)
 [![DOI](https://zenodo.org/badge/829568003.svg)](https://zenodo.org/doi/10.5281/zenodo.12763957)
 
 # Welcome to the FITS File Manager
