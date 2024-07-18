@@ -31,3 +31,18 @@ def test_comaprison_operators(capsys):
     m.print_list()
     captured = capsys.readouterr()
     assert captured.out == exp_out
+
+def test_obs_type(capsys):
+    folder_path = os.path.join("FITS")
+    m = Manager(folder_path)
+    m.obs_type("ZERO")
+    exp_out  ="FITS_File(name='20240716_s4c1_000003.fits', folder_path='FITS', OBSTYPE='ZERO', DATEOBS=datetime.datetime(2024, 7, 17, 12, 9, 59, 124840))\nFITS_File(name='20240716_s4c1_000004.fits', folder_path='FITS', OBSTYPE='ZERO', DATEOBS=datetime.datetime(2024, 7, 17, 12, 10, 0, 624221))\nFITS_File(name='20240716_s4c1_000005.fits', folder_path='FITS', OBSTYPE='ZERO', DATEOBS=datetime.datetime(2024, 7, 17, 12, 10, 2, 124743))\n"    
+    m.print_list()
+    captured = capsys.readouterr()
+    assert captured.out == exp_out
+
+def test_obs_type_error():
+    folder_path = os.path.join("FITS")
+    m = Manager(folder_path)
+    with pytest.raises(TypeError,match="Input must be of type string or list*"):
+        m.obs_type(55)

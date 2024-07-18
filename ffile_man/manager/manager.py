@@ -68,3 +68,23 @@ class Manager:
             if file.DATEOBS >= other:
                 filtered_files.append(file)
         self.fits_files = filtered_files
+
+
+    def obs_type(self,obs_types):
+        if isinstance(obs_types,str):
+            filtered_list = []
+            for file in self.fits_files:
+                if file.OBSTYPE == obs_types.upper():
+                    filtered_list.append(file)
+            self.fits_files = filtered_list
+        elif isinstance(obs_types,list):
+            filtered_list = []
+            for obs in obs_types:
+                if isinstance(obs,str):
+                    for file in self.fits_files:
+                        if file.OBSTYPE == obs.upper():
+                            filtered_list.append(file)
+            self.fits_files = filtered_list
+        else :
+            raise TypeError("Input must be of type string or list(of strings)")
+        
