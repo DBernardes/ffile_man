@@ -38,3 +38,4 @@ jobs:
     - name: Make docs
       run: |
         poetry run task make-docs
+

@@ -16,6 +16,8 @@ poetry-plugin-export = "^1.8.0"
 ipython = "^8.26.0"
 astropy = "^6.1.1"
 taskipy = "^1.13.0"
+pytest-coverage = "^0.0"
+pytest-cov = "^5.0.0"
 
 
 [tool.poetry.group.build.dependencies]
@@ -27,9 +29,23 @@ build = "^1.2.1"
 sphinx = "^7.4.5"
 sphinx-rtd-theme = "^2.0.0"
 
+
+[tool.poetry.group.lint.dependencies]
+black = "^24.4.2"
+isort = "^5.13.2"
+
+[tool.isort]
+profile="black"
+
+[tool.taskipy.tasks]
+lint = "black --check --diff . && isort --check --diff . "
+test = "pytest -x tests --cov=ffile_man"
+post_test = "coverage html"
+make-docs = "cd docs && make html"
+make-req = "poetry export -f requirements.txt --output docs/source/requirements.txt --without-hashes --with docs --with build"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-[tool.taskipy.tasks]
-make-req = "poetry export -f requirements.txt --output docs/source/requirements.txt --without-hashes --with docs --with build"
+
