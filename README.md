@@ -3,7 +3,7 @@
 
 <p align="center"><img src="docs/images/FFILES.png" alt="Repository icon" width="300"/></p>
 
-# Welcome to the FITS File Manager
+# Welcome to the FITS File Manager repository
 
 Some description...
 
