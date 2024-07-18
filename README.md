@@ -1,5 +1,6 @@
 [![Documentation Status](https://readthedocs.org/projects/ffile-man/badge/?version=latest)](https://ffile-man.readthedocs.io/en/latest/?badge=latest)
 [![DOI](https://zenodo.org/badge/829568003.svg)](https://zenodo.org/doi/10.5281/zenodo.12763957)
+[![Code Astro](https://img.shields.io/badge/Made%20at-Code/Astro-blueviolet.svg)](https://semaphorep.github.io/codeastro/)
 
 <p align="center"><img src="docs/images/FFILES.png" alt="Repository icon" width="300"/></p>
 
