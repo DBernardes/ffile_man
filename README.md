@@ -36,6 +36,7 @@ These examples use the set of FITS files present in the `./FITS` folder.
 - The third will print the files whose `OBSTYPE` keyword matches the `FLAT` and `ZERO` strings.
 
 
+
 ## How to cite
 
 Was this package useful for you? Think about citing us!
