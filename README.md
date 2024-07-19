@@ -9,10 +9,12 @@
 
 The FITS File Manager (ffile_man) is a package developed to assist you in the management of large sets of image files. 
 Using ffile_man, the data can be sorted into file groups, according to their purpose, like calibration and scientific data.
-For that, ffile_man looks for the `DATE-OBS` and `OBSTYPE` keywords in the image header. The former is the timestamp in which the image was acquired and it is used to sort the images as a function of time. 
+For that, ffile_man looks for the `DATE-OBS` and `OBSTYPE` keywords in the image header. 
+The former is the timestamp in which the image was acquired and it is used to sort the images as a function of time. 
 The latter is used to sort by the type of the observation.
 
 In this article, we will give you the basics of how to start using ffile_man.
+
 
 ## Installing the package
 
@@ -29,17 +31,20 @@ Once you have this package installed, you will be able to run the file `example.
 ```{bash}
 python example.py
 ```
+
 This file contains three examples of how to use ffile_man. 
 These examples use the set of FITS files present in the `./FITS` folder of this repository.
 The first example will print all the files found in the folder.
 The second will print the files with a timestamp greater than 2024-7-17T12:11:00 (isot).
 The third will print the files whose `OBSTYPE` keyword matches the `FLAT` string.
 
+
 ## How to cite
 
 Was this package useful for you? Think about citing us!
 
 Following are two examples of how this package can be cited.
+
 
 ### Plain text
 
