@@ -26,12 +26,15 @@ pip install ffile-man
 
 ## How to use this package
 
-Once you have this package installed, you will be able to run the file `example.ipynb` found in the root folder.
+To see how the package works, we prepared a ZIP file named `example.zip` that you can download in this [link](https://github.com/DBernardes/ffile_man/blob/development/example.zip).
+This ZIP file has an script named `example.ipynb` and a folder containing a set of dummy images that can be provided to the package.
+Once you have this package installed, you will be able to open the file `example.ipynb` found in the root folder.
 Opening this file you will see three cell containing some examples of how to use the package.
 These examples use the set of FITS files present in the `./FITS` folder.
 - The first example will print all the files found in the folder.
 - The second will print the files with a timestamp greater than 2024-7-17T12:11:00 (isot).
-- The third will print the files whose `OBSTYPE` keyword matches the `FLAT` string.
+- The third will print the files whose `OBSTYPE` keyword matches the `FLAT` and `ZERO` strings.
+
 
 
 ## How to cite
