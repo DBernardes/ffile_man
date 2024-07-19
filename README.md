@@ -26,17 +26,12 @@ pip install ffile-man
 
 ## How to use this package
 
-Once you have this package installed, you will be able to run the file `example.py` found in the root folder. For that, use the command below:
-
-```{bash}
-python example.py
-```
-
-This file contains three examples of how to use ffile_man. 
-These examples use the set of FITS files present in the `./FITS` folder of this repository.
-The first example will print all the files found in the folder.
-The second will print the files with a timestamp greater than 2024-7-17T12:11:00 (isot).
-The third will print the files whose `OBSTYPE` keyword matches the `FLAT` string.
+Once you have this package installed, you will be able to run the file `example.ipynb` found in the root folder.
+Opening this file you will see three cell containing some examples of how to use the package.
+These examples use the set of FITS files present in the `./FITS` folder.
+- The first example will print all the files found in the folder.
+- The second will print the files with a timestamp greater than 2024-7-17T12:11:00 (isot).
+- The third will print the files whose `OBSTYPE` keyword matches the `FLAT` string.
 
 
 ## How to cite
