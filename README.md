@@ -26,7 +26,9 @@ pip install ffile-man
 
 ## How to use this package
 
-Once you have this package installed, you will be able to run the file `example.py` found in the root folder. For that, use the command below:
+To see how the package works, we prepared a ZIP file named `example.zip` that you can download in this [link](https://github.com/DBernardes/ffile_man/blob/development/example.zip)
+This ZIP file has an script named `example.py` and a folder containing a set of dummy images that can be provided to the package.
+Once you have this ZIP file downloaded, extract it content and run the file `example.py` found in the folder, using the command
 
 ```{bash}
 python example.py
