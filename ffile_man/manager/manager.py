@@ -1,8 +1,7 @@
 import os
+import shutil
 
 from ..fits_file import FITS_File
-
-import shutil
 
 
 class Manager:
@@ -148,7 +147,7 @@ class Manager:
         else:
             raise TypeError("Input must be of type string or list(of strings)")
 
-    def export_to(self,destination_folder,move=False):
+    def export_to(self, destination_folder, move=False):
         """
         Export FITS files to a specified destination folder.
 
@@ -158,6 +157,12 @@ class Manager:
         """
         for file in self.fits_files:
             if move:
-                shutil.move(os.path.join(file.folder_path,file.name),os.path.join(destination_folder))
+                shutil.move(
+                    os.path.join(file.folder_path, file.name),
+                    os.path.join(destination_folder),
+                )
             else:
-                shutil.copy(os.path.join(file.folder_path,file.name),os.path.join(destination_folder))
+                shutil.copy(
+                    os.path.join(file.folder_path, file.name),
+                    os.path.join(destination_folder),
+                )
