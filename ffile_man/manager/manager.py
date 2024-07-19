@@ -158,6 +158,6 @@ class Manager:
         """
         for file in self.fits_files:
             if move:
-                shutil.move(os.path.join(file.folder_path,file.name),os.path.join(destination_folder)))
+                shutil.move(os.path.join(file.folder_path,file.name),os.path.join(destination_folder))
             else:
-                shutil.copy(os.path.join(file.folder_path,file.name),os.path.join(destination_folder)))
+                shutil.copy(os.path.join(file.folder_path,file.name),os.path.join(destination_folder))
