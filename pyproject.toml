@@ -50,3 +50,8 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 
+[tool.setuptools.packages.find]
+where = ["FITS"]
+
+[tool.setuptools.package-data]
+mypkg = ["*.fits"]
