@@ -9,4 +9,4 @@ This is a class that helps with the FTIS file managment.
    :members: manager
 
 .. autoclass:: Manager
-   :members: print_list
+   :members:

@@ -9,9 +9,12 @@
 
 The FITS File Manager (ffile_man) is a package developed to assist you in the management of large sets of image files. 
 Using ffile_man, the data can be sorted into file groups, according to their purpose, like calibration and scientific data.
-For that, ffile_man looks for the `DATE-OBS` and `OBSTYPE` keywords in the image header. The former is used to sort the images as a function of time. The latter is used to sort by the type of the observation.
+For that, ffile_man looks for the `DATE-OBS` and `OBSTYPE` keywords in the image header. 
+The former is the timestamp in which the image was acquired and it is used to sort the images as a function of time. 
+The latter is used to sort by the type of the observation.
 
-In this article, we will give you the basics to start using ffile_man.
+In this article, we will give you the basics of how to start using ffile_man.
+
 
 ## Installing the package
 
@@ -23,19 +26,25 @@ pip install ffile-man
 
 ## How to use this package
 
-Once you have this package installed, you will be able to run the file `example.py` found into the root folder. For that, use the command below:
+Once you have this package installed, you will be able to run the file `example.py` found in the root folder. For that, use the command below:
 
 ```{bash}
 python example.py
 ```
-The result of the code will be printed out in you screen.
+
+This file contains three examples of how to use ffile_man. 
+These examples use the set of FITS files present in the `./FITS` folder of this repository.
+The first example will print all the files found in the folder.
+The second will print the files with a timestamp greater than 2024-7-17T12:11:00 (isot).
+The third will print the files whose `OBSTYPE` keyword matches the `FLAT` string.
 
 
 ## How to cite
 
 Was this package useful for you? Think about citing us!
 
-Following, there are two examples of how this package can be cited.
+Following are two examples of how this package can be cited.
+
 
 ### Plain text
 
@@ -48,7 +57,7 @@ Following, there are two examples of how this package can be cited.
   author       = {Denis and
                   Balaji-0-5},
   title        = {FITS File Manager},
-  month        = jul,
+  month        = Jul,
   year         = 2024,
   publisher    = {Zenodo},
   version      = {v0.1.1},
