@@ -37,54 +37,60 @@ class Manager:
 
         self.fits_files.sort()
 
+    def seletec_obstype(self, obstype: str):
+        """Select a group of files based on the observation type
+
+        Args:
+            obstype (str): observation type (ZERO, DARK, FLAT, FOCUS, or OBJECT).
+        """
+        self.fits_files = [file for file in self.fits_files if file.OBSTYPE == obstype]
+
     def print_list(self) -> str:
         """print the list of files"""
         print(*self.fits_files, sep="\n")
 
-    def __lt__(self,other):
+    def __lt__(self, other):
         filtered_files = []
         for file in self.fits_files:
             if file.DATEOBS < other:
                 filtered_files.append(file)
         self.fits_files = filtered_files
 
-    def __gt__(self,other):
+    def __gt__(self, other):
         filtered_files = []
         for file in self.fits_files:
             if file.DATEOBS > other:
                 filtered_files.append(file)
         self.fits_files = filtered_files
 
-    def __le__(self,other):
+    def __le__(self, other):
         filtered_files = []
         for file in self.fits_files:
             if file.DATEOBS <= other:
                 filtered_files.append(file)
         self.fits_files = filtered_files
 
-    def __ge__(self,other):
+    def __ge__(self, other):
         filtered_files = []
         for file in self.fits_files:
             if file.DATEOBS >= other:
                 filtered_files.append(file)
         self.fits_files = filtered_files
 
-
-    def obs_type(self,obs_types):
-        if isinstance(obs_types,str):
+    def obs_type(self, obs_types):
+        if isinstance(obs_types, str):
             filtered_list = []
             for file in self.fits_files:
                 if file.OBSTYPE == obs_types.upper():
                     filtered_list.append(file)
             self.fits_files = filtered_list
-        elif isinstance(obs_types,list):
+        elif isinstance(obs_types, list):
             filtered_list = []
             for obs in obs_types:
-                if isinstance(obs,str):
+                if isinstance(obs, str):
                     for file in self.fits_files:
                         if file.OBSTYPE == obs.upper():
                             filtered_list.append(file)
             self.fits_files = filtered_list
-        else :
+        else:
             raise TypeError("Input must be of type string or list(of strings)")
-        

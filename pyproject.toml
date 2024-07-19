@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ffile-man"
-version = "0.1.0"
+version = "0.2.0"
 description = "FITS file manager"
 authors = ["Bernardes, D. and Balaji T R"]
 license = "MIT"
